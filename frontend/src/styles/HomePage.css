@@ -1,0 +1,99 @@
+/* General Theme */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Header Section */
+.header-section {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-slide {
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Button */
+.btn.custom-btn {
+  background-color: #f8c146; /* Orange */
+  border: none;
+  color: #121212;
+}
+
+.btn.custom-btn:hover {
+  background-color: #e6ae40; /* Darker Orange */
+  color: #ffffff;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Vision & Mission Sections */
+.vision-box,
+.mission-section img {
+  background-color: #282828;
+  color: #f8c146;
+}
+
+.section-title {
+  color: #f8c146;
+}
+
+/* Vision Section - Vision Box Hover */
+.vision-box {
+  border: 2px solid #444444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #282828;
+  color: #f8c146;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-box:hover {
+  transform: scale(1.05); /* Slightly enlarges the box */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Increases shadow intensity */
+  background-color: #383838; /* Slightly lighter background */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.mission-section img,
+.services-section img {
+  border: 3px solid #f8c146;
+  border-radius: 50%; /* Makes images round */
+  width: 130px; /* Optional: Set a fixed size for the images */
+  height: 130px; /* Optional: Set a fixed size for the images */
+  object-fit: cover; /* Ensures the images cover the circular area without stretching */
+}
+
+.brand-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: #113805; /* Match your theme color */
+}
+
+/* Footer Section */
+footer {
+  background-color: #343a40;
+  color: #f8c146;
+}
+
+footer a {
+  color: #f8c146;
+}
+
+footer a:hover {
+  color: #e6ae40;
+}

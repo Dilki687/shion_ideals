@@ -1,0 +1,102 @@
+/* ContactUs.css */
+.banner-section {
+  background-image: url("../images/banner1.jpg");  /* Adjust the path as necessary */
+  background-size: cover;   /* Make sure the image covers the entire section */
+  background-position: center center;   /* Center the image */
+  background-repeat: no-repeat;  /* Prevent repetition of the image */
+  min-height: 400px;  /* Adjust the minimum height as needed */
+  filter: brightness(0.8) contrast(1.2); /* Optional: Adjust brightness/contrast for better clarity */
+  margin-top: 100px; /* Same as the navbar height */
+  height: 70vh; /* Use viewport height for a flexible height */
+}
+
+/* Ensure the heading and paragraph scale well */
+.banner-section h1 {
+  font-size: 4rem;
+  margin-top: 50px;
+  color: white; /* Ensure the text is visible */
+}
+
+.banner-section p {
+  font-size: 1.5rem;
+  color: white; /* Ensure the text is visible */
+}
+
+/* Centering Container for Cards */
+.cards-container {
+  display: contents;
+  justify-content: center; /* Center cards horizontally */
+  align-items: center;    /* Center cards vertically */
+  min-height: calc(100vh - 400px); /* Full-screen height minus banner */
+  padding: 20px;          /* Add padding for smaller devices */
+}
+
+/* Ensure Row Wraps Responsively */
+.cards-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px;       /* Add space between cards */
+}
+
+/* Contact Details Cards */
+.card {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform: scale(1);
+  background-color: transparent; /* Transparent background */
+  color: white; /* White font color */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  color: #f8c146; 
+}
+
+/* Responsive Adjustments */
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .banner-section {
+    min-height: 300px; /* Decrease banner height */
+    height: 50vh; /* Adjust banner height to fit the screen */
+  }
+
+  .banner-section h1 {
+    font-size: 2rem;
+  }
+
+  .banner-section p {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    min-height: auto; /* Adjust height for smaller devices */
+    padding: 10px;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .banner-section {
+    min-height: 250px;
+    height: 40vh; /* Decrease height further on small screens */
+  }
+
+  .banner-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-section p {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
